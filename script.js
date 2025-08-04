@@ -8,6 +8,6 @@ if (window.location.href.startsWith("https://www.youtube.com/shorts/")) {
 } else {
 	inText = prompt("Enter a shorts URL to get the watch page!\nHelp: sidshardanand.com");
 	if(inText != null && inText != "") {
-		window.location.replace(preText + window.location.href.split("/")[4]);
+		window.location.replace(preText + inText.split("/")[4]);
 	}
 }
