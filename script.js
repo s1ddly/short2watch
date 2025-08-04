@@ -1,0 +1,13 @@
+//-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+// Plugin Script
+// v1.0: Sid Shardanand - 20250804
+//-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+preText = "https://www.youtube.com/watch?v=";
+if (window.location.href.startsWith("https://www.youtube.com/shorts/")) {
+	window.location.replace(preText + window.location.href.split("/")[4]);
+} else {
+	inText = prompt("Enter a shorts URL to get the watch page!\nHelp: sidshardanand.com");
+	if(inText != null && inText != "") {
+		window.location.replace(preText + window.location.href.split("/")[4]);
+	}
+}
